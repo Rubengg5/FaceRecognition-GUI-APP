@@ -1,7 +1,7 @@
 import cv2
 from mtcnn.mtcnn import MTCNN
 from keras.models import load_model
-from keras.preprocessing.image import img_to_array
+from tensorflow.keras.utils import img_to_array
 import numpy as np
 
 
@@ -87,3 +87,7 @@ def emotion():
     # # replace values at coordinates (100, 100) to (399, 399) of img3 with region of img2
     # img3[100:400, 100:400, :] = img2[100:400, 100:400, :]
     # cv2.imshow('Result1', img3)
+
+#TODO: funcion que detecta quién soy y según mi dinero me conceda el préstamo o no
+# def loan():
+     
